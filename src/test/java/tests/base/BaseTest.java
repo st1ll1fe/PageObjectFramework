@@ -1,7 +1,6 @@
 package tests.base;
 
-//Здесь описана общая логика,
-//которая потребуется в каждом классе
+// Здесь описана общая логика, которая потребуется в каждом классе
 
 import common.CommonActions;
 import org.openqa.selenium.JavascriptExecutor;
@@ -21,7 +20,7 @@ public class BaseTest {
     protected CianHomePage cianHomePage = new CianHomePage(driver);
     protected CianListingPage cianListingPage = new CianListingPage(driver);
 
-    //     Метод отчискти куков и памяти
+    // Метод очистки cookies и storage
     @AfterTest
     public void clearCookiesAndLocalStorage() {
         if (CLEAR_COOKIES_AND_STORAGE) {
@@ -31,8 +30,7 @@ public class BaseTest {
         }
     }
 
-    // метод закрытия браузера
-    // alwaysRun = true чтобы метод обязательно выполнялся
+    // метод закрытия браузера после suite, alwaysRun = true чтобы метод обязательно выполнялся
     @AfterSuite(alwaysRun = true)
     public void close() {
         if (HOLD_BROWSER_OPEN) {

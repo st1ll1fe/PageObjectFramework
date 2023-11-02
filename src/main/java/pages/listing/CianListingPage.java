@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import pages.base.BasePage;
 
-// Класс конкретной  page
+// Класс конкретной страницы
 public class CianListingPage extends BasePage {
 
     public CianListingPage(WebDriver driver) {
@@ -15,7 +15,7 @@ public class CianListingPage extends BasePage {
 
     private final By card = By.xpath("//article[@data-name='CardComponent']");
 
-    // Метод, проверяющий количество объявлений
+    // Метод проверяющий количество объявлений
     public CianListingPage checkCountCards() {
         // Количество объектов в коллекции
         int countCard = driver.findElements(card).size();

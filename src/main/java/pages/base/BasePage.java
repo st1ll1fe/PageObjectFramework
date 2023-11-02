@@ -8,8 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import static constants.Constant.TimeOutVariable.EXPLICIT_WAIT;
 
 
-//Здесь описана общая логика,
-//которая потребуется в каждом классе
+// Здесь описана общая логика, которая потребуется в каждом классе
 public class BasePage {
     protected WebDriver driver;
 
@@ -18,12 +17,12 @@ public class BasePage {
         this.driver = driver;
     }
 
-    //    Метод открытия странички
+    //Метод открытия странички
     public void open(String url) {
         driver.get(url);
 
     }
-
+    // Логика для явных ожиданий видимости элемента
     public WebElement waitElementIsVisible(WebElement element){
         new WebDriverWait(driver, EXPLICIT_WAIT).until(ExpectedConditions.visibilityOf(element));
         return element;

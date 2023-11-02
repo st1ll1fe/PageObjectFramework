@@ -11,6 +11,8 @@ import static common.Config.PLATFORM_AND_BROWSER;
 import static constants.Constant.TimeOutVariable.IMPLICIT_WAIT;
 
 public class CommonActions {
+
+    // С помощью этого метода создаем экземпляр WebDriver, с которым будут работать тестовые классы
     public static WebDriver createDriver() {
         WebDriver driver = null;
 
@@ -24,7 +26,7 @@ public class CommonActions {
         }
 
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(IMPLICIT_WAIT, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(IMPLICIT_WAIT, TimeUnit.SECONDS); // Установка неявного ожидания
         return driver;
     }
 }

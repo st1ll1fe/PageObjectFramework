@@ -14,7 +14,7 @@ public class CianHomePage extends BasePage {
 
     // Описание локаторов
     private final By countRooms = By.xpath("//div[@data-mark='FilterRoomsCount']");
-    private final By option3rooms = By.xpath("//div[@class='_025a50318d--dropdown--aOO1u']/ul[@class='_025a50318d--list--gT6p6']/li[3]");
+    private final By option3rooms = By.xpath("//div[@class='_025a50318d--dropdown--aOO1u']/ul[@class='_025a50318d--list--gT6p6']/li[3]"); // наверно не самый лучший и красивый локатор, попробуйте свои :)
     private final By findButton = By.xpath("//a[@data-mark='FiltersSearchButton']");
 
     // Описание методов действий на странице

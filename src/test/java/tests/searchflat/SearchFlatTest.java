@@ -8,7 +8,7 @@ import static constants.Constant.Urls.CIAN_HOME_PAGE;
 public class SearchFlatTest extends BaseTest {
 
 
-    // Метод, отвечающий за сценарий выполнения теста
+    // Метод отвечающий за сценарий выполнения теста
     @Test
     public void checkInRedirectToListing() {
         basePage.open(CIAN_HOME_PAGE);
